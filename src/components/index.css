@@ -1,0 +1,144 @@
+body {
+  display: flex;
+  margin: 0;
+  background-color: #000004;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.all-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: top;
+  justify-content: center;
+  max-width: 1024px;
+}
+.thumb-container {
+ box-sizing: border-box;
+  background-color: yellow;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: top;
+  padding: 1rem;
+  margin: 0.3rem;
+  border: 3px double #fff850;
+  border-radius: 0.2rem;
+  min-width: 160px;
+  text-align: left;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.089);
+}
+
+.thumb-container .number {
+  border-radius: 1rem;
+  padding: 0.2rem 0.4rem;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.thumb-container small {
+  text-transform: capitalize;
+}
+.detail-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.Show-more {
+  background: #1167b1 linear-gradient(#187bcd, #2a9df4) repeat-x;
+  border-radius: 0.5rem;
+  border: 1px solid #c6c6c6;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  min-width: 70%;
+  margin: 1rem 0;
+}
+
+.topLogo {
+  width: 80%; /* Responsive size */
+  display: block; /* Center image.. */
+  margin-left: auto;
+  margin-right: auto;
+}
+h3::first-letter {
+  text-transform: UPPERCASE;
+}
+h3 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal,
+.overlay {
+  width: 99vw;
+  height: 99vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  color: #fff850;
+  background: rgba(49, 49, 49, 0.8);
+}
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
+
+ol {
+  display: block;
+  width: 100%;
+}
+
+ol li {
+  min-width: calc(30% - 10px);
+  float: left;
+}
+
+.actorBox {
+  font-size: 0.8rem;
+  margin-left: 30%;
+  overflow-y: scroll;
+}
+
+.crawl-container {
+  max-width: 45rem;
+}
